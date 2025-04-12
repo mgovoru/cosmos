@@ -1,0 +1,81 @@
+/* Убираем отступы и поля */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+/* Убираем стили для списка */
+ol,
+ul {
+	list-style: none;
+}
+
+/* Обнуляем отступы для dl */
+dl {
+	padding: 0;
+}
+
+/* Т.к. HTML5 элементы требуют явного указания display: block; для browsers которые их не понимают */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/* Убираем выделение ссылок */
+a {
+	text-decoration: none;
+}
+
+/* Стандартный размер шрифта и семейство */
+body {
+	line-height: 1;
+	font-size: 100%;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Убираем границы и фон у кнопок */
+button,
+input,
+select,
+textarea {
+	border: none;
+	background: none;
+	font: inherit;
+	color: inherit;
+}
+
+/* Убираем бордер у таблиц */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
