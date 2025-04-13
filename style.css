@@ -26,7 +26,6 @@
  	position: fixed;
  	top: 0;
  	left: 0;
- 	width: 60%;
  	padding: 33px 15px 0 165px;
  	display: flex;
  	align-items: center;
@@ -178,6 +177,7 @@
  	flex-direction: column;
  	justify-content: flex-end;
  	padding-left: 165px;
+ 	padding-right: 16px;
  	padding-bottom: 50px;
  	;
  }
@@ -278,12 +278,12 @@
 
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 918px) {
  	.header {
  		width: 100%;
  	}
 
- 	.hero-section {
+ 	.about-section {
  		flex-direction: column;
  	}
 
@@ -302,11 +302,18 @@
  	.text-content h2 {
  		font-size: 1.2rem;
  	}
+
+ 	.header {
+ 		padding: 16px;
+ 	}
+
+ 	;
  }
 
  @media (max-width: 480px) {
- 	header {
+ 	.header {
  		padding: 10px 15px;
+ 		gap: 10px;
  	}
 
  	.nav-link {
@@ -351,6 +358,13 @@
  	padding-right: 60px;
  }
 
+ @media(max-width:1440px) {
+ 	.content {
+ 		padding-left: 16px;
+ 		padding-right: 16px;
+ 	}
+ }
+
  .icon-list {
  	list-style: none;
  	padding: 0;
@@ -365,12 +379,23 @@
  	padding-bottom: 55px;
  }
 
+ .icon {
+ 	margin-right: 8px;
+ }
+
  .list-item {
  	flex-grow: 1;
  	display: flex;
  	align-items: center;
  	border-bottom: 1px solid #ccc;
  	padding: 16px;
+ }
+
+ @media(max-width:375px) {
+ 	.list-item {
+ 		flex-direction: column;
+ 		gap: 16px;
+ 	}
  }
 
  .list-item:last-child {
@@ -410,6 +435,7 @@
  	}
 
  	.content {
+ 		flex-grow: 100%;
  		margin: 20px 0;
  	}
  }
@@ -435,12 +461,24 @@
  	display: flex;
  	justify-content: space-between;
  	align-items: center;
+ 	gap: 16px;
  }
+
 
  .image img {
  	width: 100%;
  	height: 100%;
  	object-fit: cover;
+ }
+
+ @media(max-width:768px) {
+ 	.image {
+ 		display: none;
+ 	}
+
+ 	.list-section {
+ 		padding-top: 24px;
+ 	}
  }
 
  .form {
@@ -458,6 +496,22 @@
  	letter-spacing: 0%;
  	text-align: left;
  	margin-bottom: 100px;
+ }
+
+ @media(max-width:1440px) {
+ 	.form-title {
+ 		margin-bottom: 16px;
+ 	}
+
+ 	.form-wrapper {
+ 		padding: 16px;
+ 	}
+ }
+ @media(max-width:375px) {
+
+ 	.form-title {
+ 		font-size: 36px;
+ 	}
  }
 
  form input[type="text"],
@@ -513,12 +567,6 @@
  	font-weight: 400;
  }
 
- @media (max-width: 768px) {
- 	.form-wrapper {
- 		padding: 15px;
- 	}
- }
-
  @media (max-width: 1100px) {
  	.form-container {
  		padding: 16px;
@@ -571,7 +619,7 @@
 
  @media(max-width:1400px) {
  	.footer {
- 		padding: 16px;
+ 		padding: 16px 60px;
  	}
  }
 
@@ -595,6 +643,16 @@
  	justify-content: space-between;
  	flex-wrap: wrap;
  	gap: 40px;
+ }
+
+ @media(max-width:768px) {
+ 	.footer-icons {
+ 		justify-content: center;
+ 	}
+
+ 	.footer {
+ 		padding: 16px;
+ 	}
  }
 
  .footer-icons .icon {
