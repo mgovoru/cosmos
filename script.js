@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   burgerBtn.addEventListener('click', function() {
     menu.classList.toggle('open');
+     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
   });
 });
-

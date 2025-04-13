@@ -13,21 +13,21 @@
 	<div class="wrapper">
 		<header class="header">
 			<a href="#" class="logo">Spacedress</a>
-		<dic class="menu-container">
+			<div class="menu-container">
 				<button class="burger-menu-btn">☰</button>
 				<div class="burger-menu-container">
-				<ul class="menu">
-					<li class="nav-item"><a href="#feature1">about</a></li>
-					<li class="nav-item"><a href="#feature2">order</a></li>
-					<li class="nav-item"><a href="#feature3">contacts</a></li>
-				</ul>
+					<ul class="menu nav">
+						<li class="nav-item"><a href="#feature1" class="nav-link">about</a></li>
+						<li class="nav-item"><a href="#feature2" class="nav-link">order</a></li>
+						<li class="nav-item"><a href="#feature3" class="nav-link">contacts</a></li>
+					</ul>
 				</div>
-		</dic>
+			</div>
 		</header>
-		<section class="hero-section">
+		<section class="about-section">
 			<div class="text-content">
-				<h1>A store of spacewear</h1>
-				<h2> wide variety</h2>
+				<h1 class="title">A store of spacewear</h1>
+				<h2 class="sub-title"> wide variety</h2>
 				<div class="features">
 					<div class="item">
 						<span class="check">✓</span> 🪐 Buy 2 space suits and get <span class="sale">50%</span> off
@@ -45,45 +45,43 @@
 			</div>
 			<div class="image-content"></div>
 		</section>
-		<section class="list-section">
+		<div class="list-section">
 			<div class="image image-left"></div>
 			<div class="content">
 				<ul class="icon-list">
-					<li><i class="icon">🔧</i> The company utilizes cutting-edge materials and technology to design space suits
+					<li class="list-item"><img src="7.svg" class="icon">The company utilizes cutting-edge materials and technology
+						to design space suits
 						that offer unparalleled comfort and
-						protection, ensuring that astronauts can focus on their missions without distractions.</li>
-					<li><i class="icon">🚀</i> With advanced customization options, the company provides tailored space suits that
-						perfectly fit individual body types,
-						enhancing mobility and reducing fatigue during space missions.
+						protection.</li>
+					<li class="list-item"><img src="7.svg" class="icon"> With advanced customization options, the company provides
+						tailored space suits that
+						perfectly fit individual body types
 					</li>
-					<li><i class="icon">🎨</i> Backed by years of experience in aerospace garment manufacturing, the company has a
-						proven track record of reliability
-						and quality, making it a trusted choice for space agencies worldwide.</li>
-					<li><i class="icon">🌿</i> The company is committed to sustainable manufacturing practices, using eco-friendly
-						materials and processes to minimize
-						the environmental impact of production, aligning with global efforts to protect the planet while exploring
-						beyond it.</li>
+					<li class="list-item"><img src="7.svg" class="icon"> Backed by years of experience in aerospace garment
+						manufacturing, the company has a
+						proven track record of reliability.</li>
+					<li class="list-item"><img src="7.svg" class="icon"> Backed by years of experience in aerospace garment
+						manufacturing, the company has a</li>
 				</ul>
 				<button class="order-button">Order</button>
 			</div>
 			<div class="image image-right"></div>
-		</section>
+		</div>
 		<div class="form-container">
-			<div class="form-wrapper"> 
+			<div class="form-wrapper">
 				<form action="#" method="POST" class="form">
-					<label for="name">Имя</label>
-					<input type="text" id="name" name="name" placeholder="Ваше имя" required />
-
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" placeholder="Ваш Email" required />
+					<h2 class="form-title">Subscribe to a newsletter</h2>
+					<input type="text" id="name" name="name" placeholder="Name" required>
+					<input type="email" id="email" name="email" placeholder="E-mail" required>
 
 					<div class="checkbox-wrapper">
-						<input type="checkbox" id="agreement" name="agreement" required />
-						<label for="agreement" class="checkbox-label">Я согласен с условиями</label>
+						<input type="checkbox" id="agreement" name="agreement" required>
+						<label for="agreement" class="checkbox-label">I accept Privacy policy</label>
 					</div>
 
-					<button type="submit">Отправить</button>
+					<button type="submit" class="form-button">Submit form</button>
 				</form>
+				<div class="image"><img src="dress_3.jpg" alt=""> </div>
 			</div>
 		</div>
 		<div class="marquee">
@@ -98,14 +96,15 @@
 			<div class="footer-top">
 				<div class="logo">Spacedress</div>
 				<div class="footer-icons">
+					<div class="icon" title="Иконка 4"><img src="6.svg" alt=""></div>
 					<div class="icon" title="Иконка 3"><img src="1.svg" alt=""></div>
 					<div class="icon" title="Иконка 3"><img src="2.svg" alt=""></div>
 					<div class="icon" title="Иконка 3"><img src="3.svg" alt=""></div>
 					<div class="icon" title="Иконка 2"><img src="4.svg" alt=""></div>
 					<div class="icon" title="Иконка 1"><img src="5.svg" alt=""></div>
-					<div class="icon" title="Иконка 4"><img src="6.svg" alt=""></div>
+
 				</div>
-				<button class="btn-order">Order</button>
+				<button class="btn-order button-footer">Order</button>
 			</div>
 			<div class="footer-bottom">
 				<div class="copyright">
