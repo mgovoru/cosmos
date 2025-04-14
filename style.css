@@ -83,7 +83,6 @@
  	justify-content: center;
  	position: absolute;
  	top: 0;
- 	/* Устанавливаем на нужное расстояние от кнопки */
  	right: 0;
  	background-color: grey;
  	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -92,7 +91,6 @@
  	opacity: 0;
  	width: 200px;
  	height: 200px;
- 	/* Укажите максимальную высоту достаточную для всех элементов */
  	opacity: 1;
  }
 
@@ -246,7 +244,6 @@
  .sale {
  	color: rgb(255, 255, 255);
  	font-family: "Prata", serif;
- 	/* font-size: 2.5rem; */
  	font-size: clamp(1.5rem, 2.5vw, 2.5rem);
  	text-align: center;
  	text-transform: uppercase;
@@ -306,8 +303,6 @@
  	.header {
  		padding: 16px;
  	}
-
- 	;
  }
 
  @media (max-width: 480px) {
@@ -435,7 +430,6 @@
  	}
 
  	.content {
- 		flex-grow: 100%;
  		margin: 20px 0;
  	}
  }
@@ -493,7 +487,6 @@
  	font-size: 54px;
  	font-weight: 400;
  	line-height: 110%;
- 	letter-spacing: 0%;
  	text-align: left;
  	margin-bottom: 100px;
  }
@@ -507,6 +500,7 @@
  		padding: 16px;
  	}
  }
+
  @media(max-width:375px) {
 
  	.form-title {
@@ -514,8 +508,8 @@
  	}
  }
 
- form input[type="text"],
- form input[type="email"] {
+ form input[name="name"],
+ form input[name="email"] {
  	width: 100%;
  	padding: 15px 38px;
  	margin-bottom: 10px;
@@ -551,11 +545,11 @@
  	margin-bottom: 25px;
  }
 
- .checkbox-wrapper input {
+ .checkbox-wrapper input[name="agreement"] {
  	margin-right: 10px;
  }
 
- input[type="checkbox"] {
+ input[name="agreement"] {
  	width: 25px;
  	height: 25px;
  }
@@ -656,8 +650,6 @@
  }
 
  .footer-icons .icon {
- 	/* width: 36px;
- 	height: 36px; */
  	display: flex;
  	align-items: center;
  	justify-content: center;
